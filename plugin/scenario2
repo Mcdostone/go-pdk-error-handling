@@ -1,0 +1,17 @@
+package main
+
+import (
+	"errors"
+	"fmt"
+
+	"github.com/extism/go-pdk"
+)
+
+//export parse_parameters
+func ParseParameters() int32 {
+	pdk.SetError(errors.New(fmt.Sprintf("error")))
+	return 0
+}
+
+func main() {
+}
